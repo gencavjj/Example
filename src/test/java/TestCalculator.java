@@ -37,4 +37,18 @@ public class TestCalculator {
                 predictedAnswer, returnedAnswer, 0);
     }
 
+    @Test
+    public void testSubtract_twoPositiveNumbers() {
+        // Given
+        double predictedAnswer = 5.0;
+
+        // When
+        double returnedAnswer = calculator.subtract(11.0, 6.0);
+
+        // Then
+        Assert.assertEquals("The numbers are not being subtracted correctly",
+                predictedAnswer, returnedAnswer, 0);
+    }
+
+
 }
